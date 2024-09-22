@@ -7,7 +7,7 @@ import Cart from "./components/Pages/Cart/Cart";
 import Shop from "./components/Pages/Shop";
 import Footer from "./components/Landingpage/Footer";
 import Contact from "./components/Pages/Contact";
-import Policies from "./components/Pages/policies";
+import Policies from "./components/Pages/Policies";
 import Jewelery from "./components/Pages/Jewelery";
 import DetailedMenItem from "./components/Items/DetailedMenItem";
 import DetailedWomenItem from "./components/Items/DetailedWomenItem";
