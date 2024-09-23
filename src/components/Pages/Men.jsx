@@ -5,6 +5,7 @@ import Loader from "../ui/Loader";
 function Men() {
   const [menItems, setMenItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     setIsLoading(true);
     async function fetchData() {
@@ -12,7 +13,6 @@ function Men() {
         "https://fakestoreapi.com/products/category/men's%20clothing"
       );
       const data = await res.json();
-      // console.log(data);
       setMenItems(data);
       setIsLoading(false);
     }
@@ -25,7 +25,7 @@ function Men() {
         {isLoading && <Loader />}
       </div>
       <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100">
-        <div className="grid grid-cols-2 items-center justify-center gap-20 px-16 m-24 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-10 px-4 md:px-8 lg:px-16 m-4 md:m-12">
           {menItems.map((item) => (
             <MenItem key={item.id} item={item} />
           ))}

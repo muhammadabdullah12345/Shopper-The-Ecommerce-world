@@ -5,11 +5,12 @@ import {
   FiPhoneCall,
   FiMail,
 } from "react-icons/fi";
+
 function Contact() {
   return (
     <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20">
-      <div className=" py-8">
-        <h1 className="text-2xl font-bold text-center text-gray-900 font-poppins">
+      <div className="py-8">
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-900 font-poppins">
           Contact Us
         </h1>
         <p className="text-center text-gray-700 font-roboto">
@@ -69,32 +70,33 @@ function Contact() {
           </div>
         </form>
       </div>
+
       <div className="text-center mt-8 mb-4">
-        <h2 className="text-2xl font-semibold text-gray-800 font-poppins">
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 font-poppins">
           Or Contact Us Directly
         </h2>
-        <p className="text-gray-600 mt-4 font-roboto flex items-center justify-center gap-[6px]">
+        <p className="text-gray-600 mt-4 font-roboto flex items-center justify-center gap-2">
           Email:{" "}
           <a
             href="mailto:info@example.com"
-            className="text-pink-500 hover:underline flex items-center justify-center gap-[6px]"
+            className="text-pink-500 hover:underline flex items-center justify-center gap-2"
           >
             <FiMail />
             info@example.com
           </a>
         </p>
-        <p className="text-gray-600 font-roboto flex items-center justify-center gap-[6px]">
+        <p className="text-gray-600 font-roboto flex items-center justify-center gap-2">
           Phone:{" "}
           <a
             href="tel:+1234567890"
-            className="text-pink-500 hover:underline flex items-center justify-center gap-[6px]"
+            className="text-pink-500 hover:underline flex items-center justify-center gap-2"
           >
             <FiPhoneCall />
             +123 456 7890
           </a>
         </p>
         <p className="text-gray-600 font-roboto">Follow us on social media:</p>
-        <div className="flex justify-center space-x-4 mt-4">
+        <div className="flex flex-wrap justify-center space-x-4 mt-4">
           <a
             href="#"
             className="text-pink-500 hover:text-pink-600 font-roboto flex items-center justify-center gap-2"
@@ -118,8 +120,9 @@ function Contact() {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center text-sm py bg-pink-100 font-roboto">
-        &copy;Copyright {new Date().getFullYear()} by Shopper Inc.
+
+      <div className="flex items-center justify-center text-sm py-4 bg-pink-100 font-roboto">
+        &copy; Copyright {new Date().getFullYear()} by Shopper Inc.
       </div>
     </div>
   );

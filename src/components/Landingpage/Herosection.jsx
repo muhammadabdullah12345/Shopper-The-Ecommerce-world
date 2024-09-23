@@ -23,16 +23,16 @@ function Herosection() {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       {/* Content (Text and Button) */}
-      <div className="relative z-10 text-center">
-        <h1 className="font-poppins text-4xl font-bold text-white">
+      <div className="relative z-10 text-center p-4">
+        <h1 className="font-poppins text-3xl md:text-4xl font-bold text-white">
           Discover the Latest Fashion Trends
         </h1>
-        <p className="text-2xl my-3 font-roboto text-white">
+        <p className="text-lg md:text-2xl my-3 font-roboto text-white">
           Shop our collection of the season's hottest looks.
         </p>
         <NavLink
           to="/shop"
-          className="font-montserrat bg-pink-400 rounded-full py-2 px-3 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:bg-pink-400 focus:ring-offset-2 hover:bg-pink-500 text-xl font-medium flex items-center justify-center gap-1 text-white"
+          className="font-montserrat bg-pink-400 rounded-full py-2 px-4 md:py-3 md:px-6 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:bg-pink-400 focus:ring-offset-2 hover:bg-pink-500 text-lg md:text-xl font-medium flex items-center justify-center gap-1 text-white"
         >
           Shop Now
           <FiArrowRight />
