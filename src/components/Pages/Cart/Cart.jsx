@@ -18,7 +18,7 @@ function Cart() {
           <CartItem item={item} key={i} />
         ))}
       </div>
-      <div className="bg-pink-300 fixed bottom-0 w-full">
+      <div className="bg-pink-300 md:fixed md:bottom-0 md:w-full">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 p-2 text-lg sm:text-xl">
           <a href="#" className="font-roboto">
             Facebook
