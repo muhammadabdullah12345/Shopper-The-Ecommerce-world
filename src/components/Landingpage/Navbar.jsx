@@ -6,7 +6,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-pink-300 fixed top-0 w-full z-10">
+    <div className="bg-pink-300 fixed top-0 w-full z-30">
       <div className="flex items-center justify-between px-6 md:px-20 py-4">
         {/* Logo */}
         <NavLink
@@ -27,7 +27,7 @@ function Navbar() {
           </button>
         </div>
 
-        {/* Navigation Links */}
+        {/* Navigation Links and Cart in Sidebar for Mobile */}
         <div
           className={`${
             menuOpen ? "block" : "hidden"
@@ -77,9 +77,19 @@ function Navbar() {
           >
             Jewelry
           </NavLink>
+
+          {/* Cart in Sidebar for Mobile */}
+          <NavLink
+            to="/cart"
+            className="flex md:hidden font-bold text-lg md:text-xl font-montserrat items-center gap-2 py-4"
+            onClick={() => setMenuOpen(false)}
+          >
+            <FiShoppingCart />
+            <span>Cart</span>
+          </NavLink>
         </div>
 
-        {/* Cart */}
+        {/* Cart in Navbar for Larger Screens */}
         <NavLink
           to="/cart"
           className="hidden md:flex font-bold text-lg md:text-xl font-montserrat items-center gap-2"

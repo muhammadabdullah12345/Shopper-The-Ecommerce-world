@@ -1,6 +1,6 @@
 function Policies() {
   return (
-    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20">
+    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 h-full">
       <div className="py-8">
         <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-900 font-poppins">
           Policies

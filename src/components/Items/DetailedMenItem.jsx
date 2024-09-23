@@ -30,7 +30,7 @@ function DetailedMenItem() {
   }
 
   return (
-    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20">
+    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 ">
       <div className="text-center font-semibold text-2xl py-6 font-poppins">
         {item.title}
       </div>

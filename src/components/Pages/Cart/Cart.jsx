@@ -7,7 +7,7 @@ function Cart() {
   if (!cart.length) return <EmptyCart />;
 
   return (
-    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 min-h-screen">
+    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 h-full">
       <div className="font-bold text-xl md:text-2xl flex items-center justify-center p-7 font-poppins">
         Your Cart
       </div>
