@@ -54,7 +54,6 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <Cart />
-        <Footer />
       </>
     ),
   },

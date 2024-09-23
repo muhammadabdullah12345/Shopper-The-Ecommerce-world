@@ -19,7 +19,7 @@ function CartItem({ item }) {
             {item.title}
           </div>
         </div>
-        <div className="flex gap-4 mt-2 md:mt-0">
+        <div className="flex gap-4 mt-2 md:mt-0 lg:gap-10">
           <div className="font-roboto">{item.size}</div>
           <div className="font-roboto">{item.color}</div>
         </div>

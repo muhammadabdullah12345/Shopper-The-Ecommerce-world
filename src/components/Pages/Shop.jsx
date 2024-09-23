@@ -6,7 +6,7 @@ import bgImage from "/images/bg-image.jpg"; // Add your background image here
 
 function Shop() {
   return (
-    <div className="relative pt-28 h-full flex justify-center items-center lg:mb-5">
+    <div className="relative pt-28 h-full flex justify-center items-center mb-5">
       {/* Background image with an overlay */}
       <div
         className="absolute inset-0 bg-cover"
