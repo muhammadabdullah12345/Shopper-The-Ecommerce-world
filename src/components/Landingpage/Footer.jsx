@@ -3,22 +3,12 @@ function Footer() {
   return (
     <div className="bg-pink-300">
       <div className="flex items-center justify-center gap-10 p-[6px] text-xl">
-        <NavLink
-          to="facebook.com"
-          className={(e) =>
-            e.isActive ? "text-xl font-bold font-roboto" : "text-xl font-roboto"
-          }
-        >
+        <a href="#" className="text-xl font-roboto">
           facebook
-        </NavLink>
-        <NavLink
-          to="instagram.com"
-          className={(e) =>
-            e.isActive ? "text-xl font-bold font-roboto" : "text-xl font-roboto"
-          }
-        >
+        </a>
+        <a href="#" className="text-xl font-roboto">
           Instagram
-        </NavLink>
+        </a>
         <NavLink
           to="/contact"
           className={(e) =>
