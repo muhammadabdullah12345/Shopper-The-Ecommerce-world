@@ -1,10 +1,5 @@
-import {
-  FiFacebook,
-  FiInstagram,
-  FiTwitter,
-  FiPhoneCall,
-  FiMail,
-} from "react-icons/fi";
+import { FiFacebook, FiInstagram, FiPhoneCall, FiMail } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Contact() {
   return (
@@ -105,10 +100,10 @@ function Contact() {
             Facebook
           </a>
           <a
-            href="https://twitter.com/login"
+            href="https://x.com/i/flow/login"
             className="text-pink-500 hover:text-pink-600 font-roboto flex items-center justify-center gap-2"
           >
-            <FiTwitter />
+            <FaXTwitter />
             Twitter
           </a>
           <a
