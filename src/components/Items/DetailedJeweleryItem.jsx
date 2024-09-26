@@ -48,7 +48,7 @@ function DetailedJeweleryItem() {
               onChange={(e) => setColor(e.target.value)}
             >
               <option value="White">White</option>
-              <option value="Blue">Blue</option>
+              <option value="Gold">Gold</option>
               <option value="Black">Black</option>
             </select>
           </div>
