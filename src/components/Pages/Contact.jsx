@@ -98,21 +98,21 @@ function Contact() {
         <p className="text-gray-600 font-roboto">Follow us on social media:</p>
         <div className="flex flex-wrap justify-center space-x-4 mt-4">
           <a
-            href="#"
+            href="https://www.facebook.com/login"
             className="text-pink-500 hover:text-pink-600 font-roboto flex items-center justify-center gap-2"
           >
             <FiFacebook />
             Facebook
           </a>
           <a
-            href="#"
+            href="https://twitter.com/login"
             className="text-pink-500 hover:text-pink-600 font-roboto flex items-center justify-center gap-2"
           >
             <FiTwitter />
             Twitter
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/accounts/login/"
             className="text-pink-500 hover:text-pink-600 font-roboto flex items-center justify-center gap-2"
           >
             <FiInstagram />

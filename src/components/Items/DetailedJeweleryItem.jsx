@@ -30,11 +30,11 @@ function DetailedJeweleryItem() {
   }
 
   return (
-    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 py-5">
+    <div className="bg-gradient-to-b from-pink-100 via-pink-200 to-pink-100 pt-20 ">
       <div className="text-center font-semibold text-2xl py-6 font-poppins">
         {item.title}
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center py-5 gap-8 font-roboto px-4">
+      <div className="flex flex-col md:flex-row items-center justify-center py-5 gap-10 md:gap-28 font-roboto px-4">
         <div className="flex flex-col gap-5">
           <div>Price: ${item.price}</div>
           <div>Rating: ⭐{item.rating.rate}</div>
@@ -72,13 +72,27 @@ function DetailedJeweleryItem() {
           {!isInCart && <Button onClick={handleAddToCart}>Add to cart</Button>}
           {isInCart && <Button>Add to cart</Button>}
           <div className="flex items-center justify-center gap-2">
-            {isInCart && <Button onClick={handleDecrement}>-</Button>}
+            {isInCart && (
+              <button
+                onClick={handleDecrement}
+                className="font-medium border rounded-full bg-pink-400 px-3 py-2 hover:bg-pink-500 font-montserrat focus:outline-none focus:ring-2 focus:ring-pink-400 text-sm"
+              >
+                -
+              </button>
+            )}
             <span>{isInCart && currentQuantity}</span>
-            {isInCart && <Button onClick={handleIncrement}>+</Button>}
+            {isInCart && (
+              <button
+                onClick={handleIncrement}
+                className="font-medium border rounded-full bg-pink-400 px-3 py-2 hover:bg-pink-500 font-montserrat focus:outline-none focus:ring-2 focus:ring-pink-400 text-sm"
+              >
+                +
+              </button>
+            )}
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center px-4 md:px-20 font-roboto  text-justify">
+      <div className="flex items-center justify-center px-4 md:px-[85px] font-roboto py-3">
         {item.description}
       </div>
     </div>

@@ -3,6 +3,9 @@ import EmptyCart from "./EmptyCart";
 import CartItem from "./CartItem";
 
 import { NavLink } from "react-router-dom";
+import { IoMdContact } from "react-icons/io";
+import { MdPolicy } from "react-icons/md";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 function Cart() {
   const cart = useSelector((state) => state.cart.cart);
@@ -19,31 +22,52 @@ function Cart() {
         ))}
       </div>
       <div className="bg-pink-300 md:fixed md:bottom-0 md:w-full">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 p-2 text-lg sm:text-xl">
-          <a href="#" className="font-roboto">
-            Facebook
-          </a>
-          <a href="#" className="font-roboto">
-            Instagram
-          </a>
-          <NavLink
-            to="/contact"
-            className={(e) =>
-              e.isActive ? "font-bold font-roboto" : "font-roboto"
-            }
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 pt-2 pb-1 text-lg sm:text-xl">
+          <a
+            href="https://www.facebook.com/login"
+            className="font-roboto text-lg"
           >
-            Contact
-          </NavLink>
+            <span className="flex items-center justify-center text-2xl">
+              <FaFacebook />
+            </span>
+            <span>Facebook</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/accounts/login/"
+            className="font-roboto text-lg"
+          >
+            <span className="flex items-center justify-center text-2xl">
+              <FaInstagram />
+            </span>
+            <span>Instagram</span>
+          </a>
+
           <NavLink
             to="/policies"
             className={(e) =>
-              e.isActive ? "font-bold font-roboto" : "font-roboto"
+              e.isActive ? "font-bold font-roboto" : "font-roboto text-lg"
             }
           >
-            Policies
+            <span className="flex items-center justify-center text-2xl">
+              <MdPolicy />
+            </span>
+            <span>Policies</span>
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={(e) =>
+              e.isActive ? "font-bold font-roboto" : "font-roboto text-lg"
+            }
+          >
+            <span className="flex items-center justify-center text-2xl">
+              <IoMdContact />
+            </span>
+            <span>Contact</span>
           </NavLink>
         </div>
-        <div className="flex items-center justify-center text-sm sm:text-base py-1 font-roboto">
+        <div className="flex items-center justify-center text-sm font-roboto pb-[2px]">
           &copy;Copyright {new Date().getFullYear()} Shopper Inc.
         </div>
       </div>
